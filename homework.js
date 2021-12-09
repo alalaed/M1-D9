@@ -16,15 +16,18 @@ const bingoNumbers = function(){
 
 
 const randomNumbers = function(){
-    let randomNumbersNode = Mathfloor((Math.random*75)+1)
-    return randomNumbersNode
+    let randomNum = Math.floor((Math.random()*75)+1)
+    let randomNumber =""+  randomNum
+    return randomNumber
 }
 
 const compareNumbers = function(){
+    
     compareNumbersNode = document.getElementById("bingo-board")
     for (i=0; i<compareNumbersNode.length; i++){
         if(compareNumbersNode[i].innerText === randomNumbers()){
             compareNumbersNode[i].classList.add("selected")
+            console.log(compareNumbersNode[i])
         }
 
     }
