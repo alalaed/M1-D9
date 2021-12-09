@@ -21,15 +21,17 @@ const randomNumbers = function(){
     return randomNumber
 }
 
-const compareNumbers = function(){
+const compareNumbers = function(e){
     
-    compareNumbersNode = document.getElementById("bingo-board")
+    compareNumbersNode = document.querySelectorAll("#bingo-board div")
     for (i=0; i<compareNumbersNode.length; i++){
         if(compareNumbersNode[i].innerText === randomNumbers()){
             compareNumbersNode[i].classList.add("selected")
-            console.log(compareNumbersNode[i])
+            console.log(compareNumbersNode.length)
         }
 
     }
 }
+
+
 
