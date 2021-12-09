@@ -21,6 +21,21 @@ const randomNumbers = function(){
     return randomNumber
 }
 
+const userBoard = function(){
+    
+    const userNumber = randomNumbers()
+    const userBoardNode = document.createElement("div")
+    for (i=1; i<=24; i++){    
+        userBoardNode.classList.add("bingo-numbers")
+        userBoardNode.innerText = userNumber 
+        userBoardNumbersNode = document.getElementById("user-board")
+        userBoardNumbersNode.appendChild(userBoardNode) 
+    }
+}
+
+
+
+
 const compareNumbers = function(e){
     
     compareNumbersNode = document.querySelectorAll("#bingo-board div")
