@@ -23,8 +23,8 @@ const randomNumbers = function(){
 const compareNumbers = function(){
     compareNumbersNode = document.getElementById("bingo-board")
     for (i=0; i<compareNumbersNode.length; i++){
-        if(compareNumbersNode[i].innerText === randomNumbers){
-            compareNumbersNode[i].classList.toggle("selected")
+        if(compareNumbersNode[i].innerText === randomNumbers()){
+            compareNumbersNode[i].classList.add("selected")
         }
 
     }
