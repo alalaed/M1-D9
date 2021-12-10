@@ -22,10 +22,10 @@ const randomNumbers = function(){
 }
 
 const userBoard = function(){
-    
-    const userNumber = randomNumbers()
-    const userBoardNode = document.createElement("div")
-    for (i=1; i<=24; i++){    
+    const userBoardNode = document.createElement("div") 
+
+    for (i=1; i<=24; i++){ 
+        const userNumber = randomNumbers()
         userBoardNode.classList.add("bingo-numbers")
         userBoardNode.innerText = userNumber 
         userBoardNumbersNode = document.getElementById("user-board")
@@ -33,7 +33,11 @@ const userBoard = function(){
     }
 }
 
-
+const userBoardContainer = function (){
+    let userBoardContainerNode = document.createElement("div")
+    userBoardContainerNode.id.add("user-board-container")
+    userBoardContainerNode.appendChild(userBoard())
+}
 
 
 const compareNumbers = function(e){

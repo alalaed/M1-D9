@@ -2,12 +2,14 @@
     background-color: rgb(154, 4, 4);
     border: solid;
     border-width: 3px;
+    margin-bottom: 60px;
+    
 }
 
 .bingo-numbers{
     background-color: rgb(26, 26, 26);
     display: inline-block;
-    width: 11.7%;
+    width: 5%;
     min-height: 64px;
     text-align: center;
     padding-top: 32px;
@@ -24,4 +26,8 @@
 .selected{
     background-color: antiquewhite;
     color: rgb(33, 32, 32);
+}
+
+#user-board{
+
 }
